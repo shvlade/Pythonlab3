@@ -21,12 +21,12 @@ class Student:
 
 
 name = input("Введите имя студента: ")
-student_id = input("Введите ID студента: ")
+student_id = input("Введите Уникальный идентификатор студента: ")
 student = Student(student_id, name)
 
 while True:
-    grade_input = input("Введите оценку (или 'стоп' для завершения): ")
-    if grade_input.lower() == "стоп":
+    grade_input = input("Введите оценку (или 'Стоп' для завершения): ")
+    if grade_input.lower() == "Стоп":
         break
     try:
         grade = float(grade_input)
