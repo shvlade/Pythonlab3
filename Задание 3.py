@@ -1,5 +1,17 @@
 from abc import ABC, abstractmethod
 import math
+rect = Rectangle(4, 5)
+circle = Circle(3)
+triangle = Triangle(3, 4, 5)
+
+print("Прямоугольник:")
+print_shape_info(rect)
+
+print("Круг:")
+print_shape_info(circle)
+
+print("Треугольник:")
+print_shape_info(triangle)
 
 class Shape(ABC):
     @abstractmethod
@@ -45,3 +57,4 @@ class Triangle(Shape):
 def print_shape_info(shape):
     print(f"Площадь: {shape.area():.2f}")
     print(f"Периметр: {shape.perimeter():.2f}")
+
